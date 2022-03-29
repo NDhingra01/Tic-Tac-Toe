@@ -1,5 +1,6 @@
 player = True
 taken_input = list()
+turns = 0
 
 board = [
     '-', '-', '-',
@@ -66,6 +67,8 @@ def won_game(user, board):
     if check_row(user, board) or check_column(user, board) or check_diag(user, board):
         return True
 
+    
+
 
 def check_row(user, board):
     complete_row = True
@@ -104,7 +107,7 @@ def check_diag(user, board):
 
 
 # -------------------- Main Loop -------------------- #
-while True:
+while turns < 9:
     active_user = current_user(player)
     print_board()
     first = input('Enter a position from 1 - 9: ')
@@ -127,3 +130,8 @@ while True:
         print(f'{active_user} won!')
         print_board()
         quit()
+
+    turns += 1
+    if turns == 9:
+        print('Tie')
+        print_board()
