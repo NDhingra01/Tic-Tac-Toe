@@ -1,5 +1,5 @@
 # Tic Tac Toe
-![image](https://user-images.githubusercontent.com/85800910/161107562-b7ed7adc-1130-4c96-85b1-12fea9c07f7d.png)
+<img src="https://user-images.githubusercontent.com/85800910/161107562-b7ed7adc-1130-4c96-85b1-12fea9c07f7d.png" height="300"/>
 
 This is very simple and beginner friendly Tic Tac Toe using python. It runs inside the terminal and asks for the user to enter their positon and switches user accordingly
 ### It servers the following features
